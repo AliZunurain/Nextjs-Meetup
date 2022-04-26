@@ -6,7 +6,7 @@
 import { MongoClient } from "mongoDB";
 
 async function handler(req, res) {  
-  if (req.method === 'POST') {
+  if (req.method === 'POST') {  
     const data = req.body;
 
     const {title, image, addesss, description} = data;
@@ -15,7 +15,7 @@ async function handler(req, res) {
     const db = client.db();
 
     const meetupsCollection = db.collection('meetupsTable');
-
+  
     const result = await meetupsCollection.insertOne({data});
 
     console.log(result);
@@ -24,6 +24,8 @@ async function handler(req, res) {
 
     res.status(201).json({message: 'Meetup Inserted into the Database'});
 
+
+    // test commit
 
   }
 }
