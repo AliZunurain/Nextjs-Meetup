@@ -44,4 +44,6 @@ export async function getStaticProps(context) {
         }
     }
 }
-export default MeetupDetails
+export default MeetupDetails;
+
+// first comment
