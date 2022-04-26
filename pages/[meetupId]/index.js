@@ -47,3 +47,4 @@ export async function getStaticProps(context) {
 export default MeetupDetails;
 
 // first comment
+//2nd comment
